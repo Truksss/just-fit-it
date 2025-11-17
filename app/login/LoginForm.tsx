@@ -23,7 +23,8 @@ export default function LoginForm() {
           className="object-contain"
         />
       </div>
-      <div className="flex items-center justify-center gap-10">
+      <div className="flex justify-center">
+      <div className="flex items-center justify-between gap-10 max-w-5xl w-full px-4">
       <Card className="w-full max-w-sm mx-auto mt-5">
         <CardHeader>
           <CardTitle className="flex items-center justify-center">Login</CardTitle>
@@ -36,7 +37,7 @@ export default function LoginForm() {
               <Input
                 id="email"
                 type="email"
-                placeholder="m@example.com"
+                placeholder="user@email.com"
                 required
               />
             </div>
@@ -59,10 +60,11 @@ export default function LoginForm() {
       <Image
           src="/images/gym.png"
           alt="Logo"
-          width={400}
-          height={200}
+          width={500}
+          height={300}
           className="object-contain"
         />  
+        </div>
       </div>
     </div>
   );
