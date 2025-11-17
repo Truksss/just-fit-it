@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Navbar from "./Navbar";
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import { Sheet, SheetContent, SheetHeader, SheetTrigger, SheetTitle } from "@/components/ui/sheet";
 import { Button } from "@/components/ui/button";
 import { Menu } from "lucide-react";
 
@@ -34,6 +34,17 @@ export default function Header() {
 
             <SheetContent side="right" className="p-6">
               <div className="flex flex-col space-y-4 text-lg">
+                <SheetHeader>
+                  <SheetTitle>
+                  <Image
+          src="/images/fitness-logo.png"
+          alt="Logo"
+          width={160}
+          height={40}
+          className="object-contain"
+        />
+                  </SheetTitle>
+                </SheetHeader>
                 <a href="/" className="font-medium">Home</a>
                 <a href="#" className="font-medium">About</a>
                 <a href="/login" className="font-medium">Login</a>
